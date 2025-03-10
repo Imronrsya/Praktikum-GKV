@@ -4,12 +4,12 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = "Main\ Tugas\ 1\ GKV\ Membuat\ Mobil.o"
-LINKOBJ  = "Main Tugas 1 GKV Membuat Mobil.o"
+OBJ      = "Main\ Tugas\ 1\ GKV\ Membuat\ Lingkaran.o"
+LINKOBJ  = "Main Tugas 1 GKV Membuat Lingkaran.o"
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/lib" -static-libstdc++ -static-libgcc -mwindows -lglut32 -lglu32 -lopengl32 -lwinmm -lgdi32
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include/c++"
-BIN      = "Tugas 1_GKV_Membuat Mobil.exe"
+BIN      = "Tugas 1_GKV_Membuat Lingkaran.exe"
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) -DGLUT_STATIC
 RM       = rm.exe -f
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-"Main\ Tugas\ 1\ GKV\ Membuat\ Mobil.o": Main\ Tugas\ 1\ GKV\ Membuat\ Mobil.cpp
-	$(CPP) -c "Main Tugas 1 GKV Membuat Mobil.cpp" -o "Main Tugas 1 GKV Membuat Mobil.o" $(CXXFLAGS)
+"Main\ Tugas\ 1\ GKV\ Membuat\ Lingkaran.o": Main\ Tugas\ 1\ GKV\ Membuat\ Lingkaran.cpp
+	$(CPP) -c "Main Tugas 1 GKV Membuat Lingkaran.cpp" -o "Main Tugas 1 GKV Membuat Lingkaran.o" $(CXXFLAGS)
